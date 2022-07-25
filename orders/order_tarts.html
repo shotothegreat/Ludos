@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Ludo's Gourmet Kitchen</title>
+    </head>
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+<!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">LUDO'S GOURMET KITCHEN</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="\Users\Noah\Desktop\Ludos\index.html" class="nav__link active-link">Home</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Order</a></li>
+						<li class="nav__item"><a href="menu.html" class="nav__link">Menu</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+<!--========== MENU ==========-->
+<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Tarts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="order.html">Cakes</a>
+    <a href="order_pastries.html">Pastries</a>
+    <a href="order_cheesecake.html">Cheesecake</a>
+	<a href="#">Tarts</a>
+	<a href="order_quiches.html">Quiches and Pies</a>
+	<a href="order_bread.html">Bread</a>
+	<a href="order_gluten_free.html">Gluten Free</a>
+	<a href="order_party.html">Party Range</a>
+  </div>
+  </div> 
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</br>
+</br>
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Menu</span>
+                <!--Cakes-->
+				<h2 class="section-title">Tarts</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/lime.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Lime</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$47.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/apple.png" alt="" class="menu__img">
+                        <h3 class="menu__name">French Apple</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$47.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/cherry.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Cherry & Almond</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$47.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+					
+					<div class="menu__content">
+                        <img src="assets/img/lemon.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Lemon</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$47.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+					
+					<div class="menu__content">
+                        <img src="assets/img/pear.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Pear & Almond</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$47.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+					
+					<div class="menu__content">
+                        <img src="assets/img/souffle.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Chocolate Souffle</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$50.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+					
+					<div class="menu__content">
+                        <img src="assets/img/flan.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Fruit Flan</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$50.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+					
+					<div class="menu__content">
+                        <img src="assets/img/lemon_meringue.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Lemon Meringue</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$50.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+					
+					<div class="menu__content">
+                        <img src="assets/img/pecan.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Pecan</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.20-$50.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+					
+					<div class="menu__content">
+                        <img src="assets/img/vanilla.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Vanilla Slice</h3>
+                        <span class="menu__detail"></span>
+                        <span class="menu__preci">$6.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
